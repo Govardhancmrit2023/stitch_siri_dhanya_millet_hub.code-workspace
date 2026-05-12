@@ -1,0 +1,28 @@
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+import Login from './pages/Login';
+import MandiWatch from './pages/MandiWatch';
+import RecipeLab from './pages/RecipeLab';
+import HealthBenefits from './pages/HealthBenefits';
+import DirectBuy from './pages/DirectBuy';
+
+import Profile from './pages/Profile';
+
+function App() {
+  return (
+    <Router>
+      <Routes>
+        <Route path="/" element={<Navigate to="/login" replace />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/mandi" element={<MandiWatch />} />
+        <Route path="/mandi-watch" element={<Navigate to="/mandi" replace />} />
+        <Route path="/recipes" element={<RecipeLab />} />
+        <Route path="/health" element={<HealthBenefits />} />
+        <Route path="/buy" element={<DirectBuy />} />
+        <Route path="/profile" element={<Profile />} />
+      </Routes>
+    </Router>
+  );
+}
+
+export default App;

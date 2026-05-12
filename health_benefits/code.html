@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">tailwind.config = {darkMode: "class", theme: {extend: {colors: {surface: "#f8faf3", "surface-bright": "#f8faf3", "surface-container": "#ebefe5", "surface-container-high": "#e4eadf", "inverse-surface": "#0c0f0b", outline: "#767d72", "on-secondary": "#ecfee3", "on-background": "#2d342c", secondary: "#53644f", "tertiary-container": "#fcfeb9", "on-secondary-fixed": "#344331", "on-primary-fixed-variant": "#3e653a", tertiary: "#60622d", "error-container": "#fd795a", "on-surface": "#2d342c", "secondary-fixed": "#d5e8ce", "secondary-fixed-dim": "#c7dac0", "surface-tint": "#41683e", "on-error-container": "#6e1400", "on-primary-container": "#345a31", "on-tertiary-fixed": "#4e501c", "inverse-on-surface": "#9b9e97", "on-primary": "#eaffe2", "surface-container-low": "#f1f5ec", "on-tertiary": "#fcfdb9", primary: "#41683e", "surface-container-lowest": "#ffffff", "surface-container-highest": "#dee5d8", "secondary-container": "#d5e8ce", "primary-container": "#c2eeb9", "on-error": "#fff7f6", "outline-variant": "#adb4a8", "on-tertiary-container": "#60622d", "on-secondary-fixed-variant": "#50604b", "tertiary-fixed-dim": "#eeefac", background: "#f8faf3", "primary-fixed-dim": "#b4e0ab", "primary-fixed": "#c2eeb9", "on-tertiary-fixed-variant": "#6b6d36", "on-surface-variant": "#5a6157", "on-primary-fixed": "#224721", "tertiary-fixed": "#fcfeb9", "surface-dim": "#d5dcd0", "on-secondary-container": "#465642", "inverse-primary": "#cdfac3", error: "#a73b21", "surface-variant": "#dee5d8", "secondary-dim": "#475743", "primary-dim": "#365c33", "error-dim": "#791903", "tertiary-dim": "#545622"}, borderRadius: {DEFAULT: "1rem", lg: "2rem", xl: "3rem", full: "9999px"}, spacing: {xs: "4px", xl: "32px", sm: "8px", base: "8px", "container-margin": "16px", lg: "24px", md: "16px", "column-gutter": "16px"}, fontFamily: {"body-lg": ["Inter"], "headline-lg": ["Inter"], "body-md": ["Inter"], "label-lg": ["Inter"], "headline-md": ["Inter"], "label-sm": ["Inter"]}, fontSize: {"body-lg": ["16px", {lineHeight: "24px", letterSpacing: "0px", fontWeight: "400"}], "headline-lg": ["32px", {lineHeight: "40px", letterSpacing: "-0.02em", fontWeight: "700"}], "body-md": ["14px", {lineHeight: "20px", letterSpacing: "0px", fontWeight: "400"}], "label-lg": ["14px", {lineHeight: "20px", letterSpacing: "0.1px", fontWeight: "500"}], "headline-md": ["24px", {lineHeight: "32px", letterSpacing: "-0.01em", fontWeight: "600"}], "label-sm": ["11px", {lineHeight: "16px", letterSpacing: "0.5px", fontWeight: "500"}]}}}};</script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+    body {
+      background-color: #f5fbef;
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface text-on-surface font-body-md antialiased">
+<!-- TopAppBar -->
+<header class="fixed top-0 z-50 w-full bg-stone-50 border-b border-stone-200 shadow-sm flex justify-between items-center px-4 py-2">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center overflow-hidden border border-outline-variant">
+<img alt="Farmer Profile" class="w-full h-full object-cover" data-alt="portrait of a smiling senior farmer in traditional attire with a sun-weathered face and warm eyes" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDIxUecHdlNdd3BAXl3lIcohy52UHldDujhKivrKvNg8GuBIeWFwkM-9Xtf4JdkSVeQCJoVcMHXrhs_i034z1HmtYe5MYLIMHoRZIDgkQRLGAukBAZvbxXjFEQ5JHJ9namG2jYt8Rd_DHSU5msJElzoBpZewRwCU5Y3C7Q1_9MGUojOaxEysOHeIRbCmTCQwYIM5Lhao-HIK9NiY4DIMxMcQAvPmS9YX_yWNWZp58SB7v-ANF7IKGatzim4r0eCXbQ-K7v9one4Q63T"/>
+</div>
+<h1 class="text-xl font-bold text-green-800 font-headline-md">Health Benefits</h1>
+</div>
+<button class="w-10 h-10 flex items-center justify-center rounded-full hover:bg-stone-100 transition-colors active:scale-95 duration-150">
+<span class="material-symbols-outlined text-green-700">notifications</span>
+</button>
+</header>
+<!-- Main Content Canvas -->
+<main class="pt-20 pb-24 px-container-margin max-w-2xl mx-auto">
+<!-- Hero/Introduction Section -->
+<section class="mb-lg">
+<div class="relative h-48 rounded-xl overflow-hidden mb-md shadow-md">
+<img alt="Golden Millet Fields" class="w-full h-full object-cover" data-alt="close up of golden ripe millet stalks swaying in a sun-drenched agricultural field at harvest time" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB6rIAQf0IwPF7SkE8kOfezEkEgJJRUOG62TUIXjZ8ypd7OlDJdPELnlebTv6xSfy9FSccSyCtcIhZLwXkhWRmMCMC7qKWcKPkNfuRReAPCSiYqQWf26TiOpmBgrmjaX-qXKWQaFOViyubLJDorPDbHS5dWNlGHekMOrgUlko7HuTKK5guGZQk-aAOe1lBCT5Qk0oQUbWRUeLLpAv9q9BOL0rBmN59NhemxBErWLJXcMmItDRsfIAmhN5i2uirVffMJvOTZuFcjCj1p"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex flex-col justify-end p-md">
+<p class="text-white font-headline-md mb-xs">Ancient Grains, Modern Health</p>
+<p class="text-white/80 font-body-md">Discover the nutritional power of Siri-Dhanya millets.</p>
+</div>
+</div>
+</section>
+<!-- Health Facts Vertical List -->
+<div class="space-y-md">
+<!-- Fact Card 1: Ragi -->
+<div class="bg-surface-container-lowest p-md rounded-xl border border-outline-variant shadow-sm flex gap-md items-start">
+<div class="flex-shrink-0 w-12 h-12 rounded-lg bg-primary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-on-primary-container" style="font-variation-settings: 'FILL' 1;">vital_signs</span>
+</div>
+<div>
+<h3 class="font-headline-md text-primary text-lg mb-1">Ragi (Finger Millet)</h3>
+<p class="text-on-surface-variant font-body-md leading-relaxed">
+            Ragi is rich in <span class="font-bold text-secondary">calcium</span> &amp; good for <span class="font-bold text-secondary">diabetes</span>. It helps in bone strengthening and maintaining healthy blood sugar levels.
+          </p>
+<div class="mt-sm flex flex-wrap gap-2">
+<span class="bg-surface-container-high px-2 py-0.5 rounded-full text-label-sm text-outline font-medium border border-outline-variant">High Fiber</span>
+<span class="bg-surface-container-high px-2 py-0.5 rounded-full text-label-sm text-outline font-medium border border-outline-variant">Iron Rich</span>
+</div>
+</div>
+</div>
+<!-- Fact Card 2: Navane -->
+<div class="bg-surface-container-lowest p-md rounded-xl border border-outline-variant shadow-sm flex gap-md items-start">
+<div class="flex-shrink-0 w-12 h-12 rounded-lg bg-tertiary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-on-tertiary-container" style="font-variation-settings: 'FILL' 1;">feed</span>
+</div>
+<div>
+<h3 class="font-headline-md text-tertiary text-lg mb-1">Navane (Foxtail Millet)</h3>
+<p class="text-on-surface-variant font-body-md leading-relaxed">
+            Navane <span class="font-bold text-secondary">improves digestion</span> and is a powerhouse of antioxidants. It helps in detoxifying the body and boosting immunity.
+          </p>
+<div class="mt-sm flex flex-wrap gap-2">
+<span class="bg-secondary-container px-2 py-0.5 rounded-full text-label-sm text-on-secondary-container font-medium">B-Vitamins</span>
+<span class="bg-secondary-container px-2 py-0.5 rounded-full text-label-sm text-on-secondary-container font-medium">Low GI</span>
+</div>
+</div>
+</div>
+<!-- Fact Card 3: Gluten-Free/Heart Healthy -->
+<div class="bg-surface-container-lowest p-md rounded-xl border border-outline-variant shadow-sm flex gap-md items-start">
+<div class="flex-shrink-0 w-12 h-12 rounded-lg bg-primary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-on-primary-container" style="font-variation-settings: 'FILL' 1;">favorite</span>
+</div>
+<div>
+<h3 class="font-headline-md text-primary text-lg mb-1">Universal Benefits</h3>
+<p class="text-on-surface-variant font-body-md leading-relaxed">
+            All Siri-Dhanya millets are <span class="font-bold text-secondary">gluten-free</span> and <span class="font-bold text-secondary">heart-healthy</span>. They contain essential minerals like magnesium and phosphorus.
+          </p>
+<div class="mt-sm flex flex-wrap gap-2">
+<span class="bg-surface-container-high px-2 py-0.5 rounded-full text-label-sm text-outline font-medium border border-outline-variant">Weight Loss</span>
+<span class="bg-surface-container-high px-2 py-0.5 rounded-full text-label-sm text-outline font-medium border border-outline-variant">Non-Acidic</span>
+</div>
+</div>
+</div>
+<!-- Fact Card 4: Sajje -->
+<div class="bg-surface-container-lowest p-md rounded-xl border border-outline-variant shadow-sm flex gap-md items-start">
+<div class="flex-shrink-0 w-12 h-12 rounded-lg bg-tertiary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-on-tertiary-container" style="font-variation-settings: 'FILL' 1;">energy_savings_leaf</span>
+</div>
+<div>
+<h3 class="font-headline-md text-tertiary text-lg mb-1">Sajje (Pearl Millet)</h3>
+<p class="text-on-surface-variant font-body-md leading-relaxed">
+            Excellent source of <span class="font-bold text-secondary">energy</span> during hot summers. High in protein and phosphorus, supporting healthy hair and skin.
+          </p>
+<div class="mt-sm flex flex-wrap gap-2">
+<span class="bg-secondary-container px-2 py-0.5 rounded-full text-label-sm text-on-secondary-container font-medium">Protein Power</span>
+<span class="bg-secondary-container px-2 py-0.5 rounded-full text-label-sm text-on-secondary-container font-medium">Omega-3</span>
+</div>
+</div>
+</div>
+<!-- Informative Note -->
+<div class="bg-secondary-container/30 p-md rounded-xl border-l-4 border-secondary mt-lg">
+<div class="flex items-center gap-2 mb-2">
+<span class="material-symbols-outlined text-secondary">info</span>
+<p class="font-label-lg text-on-secondary-container">Expert Tip</p>
+</div>
+<p class="text-on-surface-variant font-body-md italic">
+          "Soaking millets for 4-6 hours before cooking enhances nutrient absorption and makes them easier to digest."
+        </p>
+</div>
+</div>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 w-full z-50 flex justify-around items-center px-4 pb-4 pt-2 bg-white border-t border-stone-200 shadow-[0_-2px_10px_rgba(0,0,0,0.05)]">
+<!-- Mandi -->
+<div class="flex flex-col items-center justify-center text-stone-500 px-5 py-1 hover:text-green-600 active:scale-90 transition-all cursor-pointer">
+<span class="material-symbols-outlined">trending_up</span>
+<span class="font-['Inter'] text-[12px] font-medium">Mandi</span>
+</div>
+<!-- Recipes -->
+<div class="flex flex-col items-center justify-center text-stone-500 px-5 py-1 hover:text-green-600 active:scale-90 transition-all cursor-pointer">
+<span class="material-symbols-outlined">cooking</span>
+<span class="font-['Inter'] text-[12px] font-medium">Recipes</span>
+</div>
+<!-- Health (ACTIVE) -->
+<div class="flex flex-col items-center justify-center bg-green-100 text-green-900 rounded-2xl px-5 py-1 active:scale-90 transition-all cursor-pointer">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">favorite</span>
+<span class="font-['Inter'] text-[12px] font-medium">Health</span>
+</div>
+<!-- Direct Buy -->
+<div class="flex flex-col items-center justify-center text-stone-500 px-5 py-1 hover:text-green-600 active:scale-90 transition-all cursor-pointer">
+<span class="material-symbols-outlined">storefront</span>
+<span class="font-['Inter'] text-[12px] font-medium">Direct Buy</span>
+</div>
+</nav>
+</body></html>

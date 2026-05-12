@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<title>Recipe Lab - Siri-Dhanya Hub</title>
+<script id="tailwind-config">tailwind.config = {darkMode: "class", theme: {extend: {colors: {surface: "#f8faf3", "surface-bright": "#f8faf3", "surface-container": "#ebefe5", "surface-container-high": "#e4eadf", "inverse-surface": "#0c0f0b", outline: "#767d72", "on-secondary": "#ecfee3", "on-background": "#2d342c", secondary: "#53644f", "tertiary-container": "#fcfeb9", "on-secondary-fixed": "#344331", "on-primary-fixed-variant": "#3e653a", tertiary: "#60622d", "error-container": "#fd795a", "on-surface": "#2d342c", "secondary-fixed": "#d5e8ce", "secondary-fixed-dim": "#c7dac0", "surface-tint": "#41683e", "on-error-container": "#6e1400", "on-primary-container": "#345a31", "on-tertiary-fixed": "#4e501c", "inverse-on-surface": "#9b9e97", "on-primary": "#eaffe2", "surface-container-low": "#f1f5ec", "on-tertiary": "#fcfdb9", primary: "#41683e", "surface-container-lowest": "#ffffff", "surface-container-highest": "#dee5d8", "secondary-container": "#d5e8ce", "primary-container": "#c2eeb9", "on-error": "#fff7f6", "outline-variant": "#adb4a8", "on-tertiary-container": "#60622d", "on-secondary-fixed-variant": "#50604b", "tertiary-fixed-dim": "#eeefac", background: "#f8faf3", "primary-fixed-dim": "#b4e0ab", "primary-fixed": "#c2eeb9", "on-tertiary-fixed-variant": "#6b6d36", "on-surface-variant": "#5a6157", "on-primary-fixed": "#224721", "tertiary-fixed": "#fcfeb9", "surface-dim": "#d5dcd0", "on-secondary-container": "#465642", "inverse-primary": "#cdfac3", error: "#a73b21", "surface-variant": "#dee5d8", "secondary-dim": "#475743", "primary-dim": "#365c33", "error-dim": "#791903", "tertiary-dim": "#545622"}, borderRadius: {DEFAULT: "1rem", lg: "2rem", xl: "3rem", full: "9999px"}, spacing: {xs: "4px", xl: "32px", sm: "8px", base: "8px", "container-margin": "16px", lg: "24px", md: "16px", "column-gutter": "16px"}, fontFamily: {"body-lg": ["Inter"], "headline-lg": ["Inter"], "body-md": ["Inter"], "label-lg": ["Inter"], "headline-md": ["Inter"], "label-sm": ["Inter"]}, fontSize: {"body-lg": ["16px", {lineHeight: "24px", letterSpacing: "0px", fontWeight: "400"}], "headline-lg": ["32px", {lineHeight: "40px", letterSpacing: "-0.02em", fontWeight: "700"}], "body-md": ["14px", {lineHeight: "20px", letterSpacing: "0px", fontWeight: "400"}], "label-lg": ["14px", {lineHeight: "20px", letterSpacing: "0.1px", fontWeight: "500"}], "headline-md": ["24px", {lineHeight: "32px", letterSpacing: "-0.01em", fontWeight: "600"}], "label-sm": ["11px", {lineHeight: "16px", letterSpacing: "0.5px", fontWeight: "500"}]}}}};</script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface font-body-lg text-on-surface min-h-screen pb-24">
+<!-- TopAppBar -->
+<header class="bg-stone-50 dark:bg-stone-900 border-b border-stone-200 dark:border-stone-800 shadow-sm fixed top-0 w-full z-50">
+<div class="flex justify-between items-center w-full px-4 py-2 font-['Inter'] antialiased">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-surface-container overflow-hidden">
+<img alt="Farmer Profile" data-alt="Close-up portrait of a cheerful elderly Indian farmer wearing a traditional white turban in soft afternoon sunlight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAORWlmSDa08ajBQEpPtSYEZQWiV9vCndwcLi7tXicSGY9rdByFqlJ2IO13GOnR_K4WM-QQ-keZvNF0BV0p3QuoURXA2wM6Ylk-r1vji6Qjny12dZO0P2N5kYTR8NHklBlJ1RpWGvOmJ6X6AXrJ8Qxz83bHnf6IeKwf1cHvImyR0eOZpTEKmlio9vCjxaGmXDxBw50YnCBln4n-o06Oqt61_8lfbjAE7z1YU8U9NPFu8BSvgpsPDLLLWd4dsOIqZOdBQN6_vaMvlSxN"/>
+</div>
+<span class="text-xl font-bold text-green-800 dark:text-green-400">Recipe Lab</span>
+</div>
+<button class="material-symbols-outlined text-green-700 dark:text-green-500 hover:bg-stone-100 dark:hover:bg-stone-800 transition-colors p-2 rounded-full active:scale-95 duration-150">
+        notifications
+      </button>
+</div>
+</header>
+<main class="mt-16 px-container-margin pt-lg">
+<!-- Search Bar Section -->
+<section class="mb-lg">
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-4 text-outline">search</span>
+<input class="w-full pl-12 pr-4 py-3 bg-white border border-outline-variant rounded-xl focus:ring-2 focus:ring-primary focus:border-primary outline-none transition-all placeholder:text-outline font-body-md" placeholder="Search recipes by millet..." type="text"/>
+</div>
+</section>
+<!-- Categories Filter Chips -->
+<section class="mb-lg overflow-x-auto whitespace-nowrap pb-2 flex gap-sm scrollbar-hide">
+<button class="px-md py-sm bg-primary text-on-primary rounded-full font-label-lg shadow-sm">All Recipes</button>
+<button class="px-md py-sm bg-white border border-outline-variant text-on-surface-variant rounded-full font-label-lg hover:bg-surface-container transition-colors">Breakfast</button>
+<button class="px-md py-sm bg-white border border-outline-variant text-on-surface-variant rounded-full font-label-lg hover:bg-surface-container transition-colors">Traditional</button>
+<button class="px-md py-sm bg-white border border-outline-variant text-on-surface-variant rounded-full font-label-lg hover:bg-surface-container transition-colors">Snacks</button>
+<button class="px-md py-sm bg-white border border-outline-variant text-on-surface-variant rounded-full font-label-lg hover:bg-surface-container transition-colors">Desserts</button>
+</section>
+<!-- Bento-ish Grid for Recipes -->
+<section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-md mb-xl">
+<!-- Card 1: Featured -->
+<div class="group relative bg-white rounded-xl overflow-hidden shadow-[0_4px_20px_-4px_rgba(117,88,77,0.12)] border border-surface-container-high transition-transform duration-300 hover:-translate-y-1">
+<div class="relative h-56 overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Traditional Ragi Mudde balls served on a fresh green banana leaf with spicy vegetable sambar, warm earthy tones" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBD6XeBCHP3cLQT-rx1mdibMGaI7dmnh1UCKl85OO1ys8NbVRgrDyI3ZFvNIkySBODbaUp5Tl5FxkU73RoJ5BI4Q0SuVOczIScBisp8XqfEFGDC7nlJyMwqq6j7ZN83BHZxW6D70Cqvdp7LHKzu22RqXgOfqjkROwWlLyZY6k8N21gBV6lf62LZ8uCjp-UjMG4NAmrPYIxJ-OaNFXat0S7VsUT7goP1h3f1B5DAxHnI58mHsPHhEkOShdLssRqs_BvZjHxWOmPCjtIt"/>
+<button class="absolute top-4 right-4 bg-white/80 backdrop-blur-md p-2 rounded-full text-tertiary hover:bg-white transition-colors">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">favorite</span>
+</button>
+<div class="absolute bottom-4 left-4 bg-primary/90 text-white px-3 py-1 rounded-lg font-label-sm backdrop-blur-sm">Featured</div>
+</div>
+<div class="p-md">
+<h3 class="font-headline-md text-on-surface mb-xs">Ragi Mudde</h3>
+<div class="flex items-center gap-sm text-outline font-label-sm">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">schedule</span> 20 min</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">bolt</span> High Fiber</span>
+</div>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="group relative bg-white rounded-xl overflow-hidden shadow-[0_4px_20px_-4px_rgba(117,88,77,0.12)] border border-surface-container-high transition-transform duration-300 hover:-translate-y-1">
+<div class="relative h-56 overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Steamning bowl of Foxtail Millet Khichdi loaded with colorful green peas and carrots, garnished with fresh cilantro" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD31tGg8kpCbCxgRWbZWYYQL5OWFpGhE-9sUFMFGrJpW5MccPYBUcj8Jc9emieMNd4yS5Z3DDyP02X1HR760LMyPxsqr5Sxb4LbOSQ2WlQOjGuIumIQ8S4ZkbdPn8b1UFXvg9iRDiP46bQSg30e4yXXn24Ip_a-ieiB27OGLH1D_IZQX7zcZe2hIkOSXpx0u5_s5oB3Qj5JhDyLovdxGUWXU-OFBfMLnpvHM1fCOfQnb3fnpJurN6LUNg5BohCyiKzeNhYxyZ3LQtmf"/>
+<button class="absolute top-4 right-4 bg-white/80 backdrop-blur-md p-2 rounded-full text-outline hover:text-tertiary transition-colors">
+<span class="material-symbols-outlined">favorite</span>
+</button>
+</div>
+<div class="p-md">
+<h3 class="font-headline-md text-on-surface mb-xs">Millet Khichdi</h3>
+<div class="flex items-center gap-sm text-outline font-label-sm">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">schedule</span> 35 min</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">restaurant</span> Protein Rich</span>
+</div>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="group relative bg-white rounded-xl overflow-hidden shadow-[0_4px_20px_-4px_rgba(117,88,77,0.12)] border border-surface-container-high transition-transform duration-300 hover:-translate-y-1">
+<div class="relative h-56 overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Rustic Jowar Roti stacked on a wooden plate with a dollop of fresh butter and spicy garlic chutney on the side" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDu5OGllBG7JEynpldYR7VFcfOrg1Ws5nJfU6y_dcncjdEec9MuiPK572Rq5DZ2mX69YXrrUbAIKHPZc-r2pzJ4uqd3jBMmLW4NdSPD4bmXlxdLqlvh7R0La-W7zq1VFlGjGGqS82d4FLcpl3B4JACQ-uHaFyhZX8XKkkWZtAXMoHnTmjnZClpqzBFqOnBuFd_HKCLrU0koHly_bfFi6lEfT8OiyAnE_G23FeROCtJJ5f609bQAZi7OLisZaTaBDAGzhLHBV_w2_wPt"/>
+<button class="absolute top-4 right-4 bg-white/80 backdrop-blur-md p-2 rounded-full text-outline hover:text-tertiary transition-colors">
+<span class="material-symbols-outlined">favorite</span>
+</button>
+</div>
+<div class="p-md">
+<h3 class="font-headline-md text-on-surface mb-xs">Jowar Roti</h3>
+<div class="flex items-center gap-sm text-outline font-label-sm">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">schedule</span> 15 min</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">eco</span> Gluten Free</span>
+</div>
+</div>
+</div>
+<!-- Card 4 -->
+<div class="group relative bg-white rounded-xl overflow-hidden shadow-[0_4px_20px_-4px_rgba(117,88,77,0.12)] border border-surface-container-high transition-transform duration-300 hover:-translate-y-1">
+<div class="relative h-56 overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Crispy thin Bajra Dosa served with coconut chutney and tangy tomato dip in brass bowls, warm morning light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAAuCx-i6uByVk2MVssi3vuZWPXMzsjwAC9wqKcIG_JcF0I6suVJcCDY3SU8JOE007AMxs2HnZVTvpptsfwPDOfrNTGEr2FqjbM6YlXyvFmJe3lWjKZ5pQ3BXJXhZN8dQP3ygQlfUKj9tUeen5h6aMGYMBXd_eY5Qj-R6qiTROa6-Dma3fxow7edo8mI5_qLNSYB7YNDdRjsEQAQGt1XsK_TMdV-EGqSlueesH6UA3R9YyVftXR3j8TZJaipAdMklQ9Xac5hcHzzoDq"/>
+<button class="absolute top-4 right-4 bg-white/80 backdrop-blur-md p-2 rounded-full text-outline hover:text-tertiary transition-colors">
+<span class="material-symbols-outlined">favorite</span>
+</button>
+</div>
+<div class="p-md">
+<h3 class="font-headline-md text-on-surface mb-xs">Bajra Dosa</h3>
+<div class="flex items-center gap-sm text-outline font-label-sm">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">schedule</span> 10 min</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">timer_10</span> Quick Prep</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Discovery Section -->
+<section class="bg-primary-container/20 rounded-2xl p-lg mb-xl border border-primary-container/30">
+<div class="flex flex-col md:flex-row items-center gap-lg">
+<div class="flex-1">
+<h2 class="font-headline-md text-on-primary-container mb-sm">Unsure what to cook?</h2>
+<p class="font-body-md text-on-surface-variant mb-md">Try our millet matching engine. Tell us what ingredients you have, and we'll find the perfect recipe for you.</p>
+<button class="bg-primary text-on-primary px-lg py-md rounded-xl font-label-lg shadow-md active:scale-95 transition-all">Start Matching</button>
+</div>
+<div class="w-full md:w-1/3 aspect-video rounded-xl bg-surface-container-high overflow-hidden shadow-inner">
+<img class="w-full h-full object-cover opacity-80" data-alt="Artistic composition of various millet grains in wooden spoons against a neutral stone background, soft textures" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD7-31qwlDlRkoJ5XJVykWnOgk2k7P1CcpAVjDgoSldSHycE0OzHYTwNDT82HGtbupnKEAnDf24dYPuFNGyV70L4fY_--dBUpDvPxhJ-wePJoQ65HF5P-VUaI_MTqPwzJup0KDXDmuQ2zbwv09lWvm447N8J5zYfeQe6ch2Vrqbv9kKXtE_V9DuCrA8Zsryp64Eulvctz-2-o-eBpb_SZSceNNzQ5D7yVFRIIXOp991JBftC-axyAwZ6cpv2nw_K3zG49HmdxYlWZhT"/>
+</div>
+</div>
+</section>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 w-full z-50 flex justify-around items-center px-4 pb-safe pt-2 bg-white dark:bg-stone-950 border-t border-stone-200 dark:border-stone-800 shadow-[0_-2px_10px_rgba(0,0,0,0.05)]">
+<a class="flex flex-col items-center justify-center text-stone-500 dark:text-stone-400 px-5 py-1 hover:text-green-600 dark:hover:text-green-400 active:scale-90 transition-all font-['Inter'] text-[12px] font-medium" href="#">
+<span class="material-symbols-outlined">trending_up</span>
+<span>Mandi</span>
+</a>
+<!-- Active State: Recipes -->
+<a class="flex flex-col items-center justify-center bg-green-100 dark:bg-green-900/40 text-green-900 dark:text-green-100 rounded-2xl px-5 py-1 transition-all font-['Inter'] text-[12px] font-medium" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">cooking</span>
+<span>Recipes</span>
+</a>
+<a class="flex flex-col items-center justify-center text-stone-500 dark:text-stone-400 px-5 py-1 hover:text-green-600 dark:hover:text-green-400 active:scale-90 transition-all font-['Inter'] text-[12px] font-medium" href="#">
+<span class="material-symbols-outlined">favorite</span>
+<span>Health</span>
+</a>
+<a class="flex flex-col items-center justify-center text-stone-500 dark:text-stone-400 px-5 py-1 hover:text-green-600 dark:hover:text-green-400 active:scale-90 transition-all font-['Inter'] text-[12px] font-medium" href="#">
+<span class="material-symbols-outlined">storefront</span>
+<span>Direct Buy</span>
+</a>
+</nav>
+</body></html>
